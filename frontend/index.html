@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Itens Premium</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-globes">
+        <div class="globe globe-1"></div>
+        <div class="globe globe-2"></div>
+        <div class="globe globe-3"></div>
+    </div>
+
+    <main class="container">
+        <header>
+            <h1>Meus Itens</h1>
+            <p>Gerencie seus dados com estilo e eficiência.</p>
+        </header>
+
+        <section class="card glass-effect">
+            <h2>Adicionar Novo Item</h2>
+            <form id="itemForm">
+                <div class="input-group">
+                    <label for="name">Nome do Item</label>
+                    <input type="text" id="name" name="name" placeholder="Ex: Projeto X" required>
+                </div>
+                <div class="input-group">
+                    <label for="description">Descrição</label>
+                    <textarea id="description" name="description" placeholder="Detalhes do item..."></textarea>
+                </div>
+                <button type="submit" class="btn-primary">
+                    <span>Salvar Item</span>
+                </button>
+            </form>
+        </section>
+
+        <section class="card glass-effect list-section">
+            <h2>Itens Cadastrados</h2>
+            <div id="itemsList" class="items-grid">
+                <!-- Itens serão inseridos aqui via JS -->
+                <div class="loading-spinner">Carregando...</div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
