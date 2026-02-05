@@ -48,7 +48,7 @@ app.post('/api/items', (req, res) => {
             data: {
                 id: this.lastID,
                 name,
-                description
+                description: description || ""
             }
         });
     });
